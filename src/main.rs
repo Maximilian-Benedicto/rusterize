@@ -76,8 +76,7 @@ fn main() {
         }
     }
 
-    let mut window =
-        Window::new("Rust Rasterizer", WIDTH, HEIGHT, WindowOptions::default()).unwrap();
+    let mut window = Window::new("Rusterize!", WIDTH, HEIGHT, WindowOptions::default()).unwrap();
 
     while window.is_open() && !window.is_key_down(minifb::Key::Escape) {
         window.update_with_buffer(&buffer, WIDTH, HEIGHT).unwrap();
